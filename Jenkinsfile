@@ -10,7 +10,7 @@ pipeline {
        stage ("Excute Ansible") { 
           steps
               { 
-                 sh 'ansiblePlaybook credentialsId: 'Ansible', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'dev.inv', playbook: 'apache.yml' '
+                 sh "ansiblePlaybook credentialsId: 'Ansible', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'dev.inv', playbook: 'apache.yml' " 
  
              }
                                 }
