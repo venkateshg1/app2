@@ -5,7 +5,7 @@ pipeline {
          steps 
             {
               sh 'git credentialsId: 'Git', url: 'https://github.com/venkateshg1/app2.git' '
-            }
+                                                  }
        }
        stage ("Excute Ansible") { 
           steps
